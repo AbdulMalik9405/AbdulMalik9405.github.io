@@ -1,3 +1,10 @@
 h1 {
-text-align: center;
+    text-align: center;
+    font-size: 80px;
 }
+
+.Intro {
+    text-align: center;
+    font-size: 30px;
+}
+
