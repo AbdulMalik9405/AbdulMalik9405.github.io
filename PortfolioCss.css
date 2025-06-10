@@ -15,10 +15,20 @@ h1 {
     margin-top: 6.5em;
 }
 
-.Arrow {
+.DownArrow {
     text-align: center;
     font-size: 0.8em;
     margin-top: 15em;
+}
+
+.UpArrow {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 15em;
+}
+
+.Rotate {
+    transform: rotate(180deg);
 }
 
 img {
