@@ -1,10 +1,27 @@
 h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 2.5em;
 }
 
 .Intro {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5em;
+    margin-top: 10em
 }
 
+.Projects {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 6.5em;
+}
+
+.Arrow {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 15em;
+}
+
+img {
+    width:2em; 
+    height:2em;
+}
