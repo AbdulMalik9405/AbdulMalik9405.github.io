@@ -31,7 +31,13 @@ h1 {
     transform: rotate(180deg);
 }
 
+.Contacts {
+    position: absolute; 
+    top: 0px; 
+    right: 0px;
+}
+
 img {
-    width:2em; 
-    height:2em;
+    width:3em; 
+    height:3em;
 }
