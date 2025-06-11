@@ -29,7 +29,7 @@ h3 {
 .UpArrow {
     text-align: center;
     font-size: 0.8em;
-    margin-top: 15em;
+    margin-top: 60em;
 }
 
 .Rotate {
@@ -43,15 +43,26 @@ h3 {
 }
 
 .Project1 {
+    float: left;
     text-align: center;
-    margin-left: 10em;
-    margin-right: 45em;
+    position: relative;
+    left: 7%;
+    width: 40%;
     border: 0.2em solid;
 }
 
-.FlightImage {
-    width:15em; 
-    height:10em;
+.Project2 {
+    float: right;
+    text-align: center;
+    position: relative;
+    right: 7%;
+    width: 40%;
+    border: 0.2em solid;
+}
+
+.ProjectImage {
+    width: 60%; 
+    height: 60%;
 }
 
 .githubimage {
