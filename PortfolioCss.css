@@ -3,6 +3,11 @@ h1 {
     font-size: 2.5em;
 }
 
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .Intro {
     text-align: center;
     font-size: 1.5em;
@@ -37,7 +42,24 @@ h1 {
     right: 0px;
 }
 
-img {
+.Project1 {
+    text-align: center;
+    margin-left: 10em;
+    margin-right: 45em;
+    border: 0.2em solid;
+}
+
+.FlightImage {
+    width:15em; 
+    height:10em;
+}
+
+.githubimage {
+    width:3em; 
+    height:3em;
+}
+
+.ScrollUpDown {
     width:3em; 
     height:3em;
 }
