@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="PortfolioCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="PortfolioCss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-<div class = "Contacts">
-  <a href = "https://github.com/AbdulMalik9405" target="_blank">
-    <img src = "github-mark.svg" id = "Top" class = "githubimage">
-  </a>
-</div>
+  <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </label>
+    <nav class="menu">
+        <a href="#Projects">Projects</a>
+        <a href="#AboutMe">About Me</a>
+        <a href="#Contacts">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+    </button>
 
 <div class = "Intro">
   <h1>Abdul Malik</h1>
@@ -32,30 +41,46 @@
   </div>
 </section>
 
-<div class = "Project1">
-  <p><h3><a href="https://github.com/AbdulMalik9405/Airplane-Seat-Booking-Manager" target = "_blank">
-    Airplane-Seat-Booking-Manager
-  </a></h3></p>
-  <div>
-    <img src = "flight-4516478_640.jpg" class = "ProjectImage">
+<div class = "container">
+  <div class = "Project">
+    <p><h3><a href="https://github.com/AbdulMalik9405/Airplane-Seat-Booking-Manager" target = "_blank">
+      Airplane-Seat-Booking-Manager
+    </a></h3></p>
+    <div>
+      <img src = "flight-4516478_640.jpg">
+    </div>
+      <p>A program which allows users to view and edit an airplane seating chart.</p>
   </div>
-    <p>A program which allows users to view and edit an airplane seating chart. Users are able to book, reserve, set seat as VIP or make 
-      seats available. The output consists of stating the number of seats available, booked, reserved or set as VIP as well as the total revenue 
-      from booking seats.</p>
+
+  <div class = "Project">
+    <p><h3><a href="https://github.com/AbdulMalik9405/Rental_Car_Planner" target = "_blank">
+      Rental_Car_Planner
+    </a></h3></p>
+    <div>
+      <img src = "road-5056788_640.jpg">
+    </div>
+      <p>A program to calculate the time taken for a vehicle to travel to a destination.</p>
+  </div>
+
+  <div class = "Project">
+    <p><h3><a href="https://github.com/AbdulMalik9405/CRUD-MySQL" target = "_blank">
+      MySQL CRUD Program
+    </a></h3></p>
+    <img src = "road-5056788_640.jpg">
+    <p>A program which connects to a Database on MySQL and allows users to Create, Read, Update and Delete from a table. </p>
+  </div>
 </div>
 
-<div class = "Project2">
-  <p><h3><a href="https://github.com/AbdulMalik9405/Rental_Car_Planner" target = "_blank">
-    Rental_Car_Planner
-  </a></h3></p>
+<div>
+  <h2 id="AboutMe">About Me</h2>
+</div>  
+
   <div>
-    <img src = "road-5056788_640.jpg" class = "ProjectImage">
-  </div>
-    <p>A program which allows users to choose a destination and vehicle and input the time they have available for the trip.
-      The program will calculate the time taken for the chosen vehicle to travel to the chosen destination as well as calculating
-      fuel costs in both metric and imperial units.
-    </p>
-</div>
+    <h2 id="Contacts">Contact</h2>
+    <a href = "https://github.com/AbdulMalik9405" target="_blank">
+      <img src = "github-mark.svg" class = "githubimage">
+    </a>
+  </div>  
 
 <div class = "UpArrow">
   <p><h2>Scroll Up</h2></p>
@@ -66,4 +91,5 @@
   </div>
 </div>
 
+  <script src="portfoliojs.js"></script>
 </body>
