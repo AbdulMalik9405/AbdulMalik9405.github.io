@@ -7,6 +7,7 @@ const menu = document.getElementById("menu");
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
     icon.classList.replace('fa-moon', 'fa-sun');
+    document.getElementById("github-icon").setAttribute('src', 'github-mark-white.svg');
 }
 
 toggle.addEventListener('click', () => {
