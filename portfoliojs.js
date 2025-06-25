@@ -1,6 +1,7 @@
 const toggle = document.getElementById('theme-toggle');
 const icon = toggle.querySelector('i');
 const body = document.body;
+const menu = document.getElementById("menu");
 
 // Load saved theme from localStorage
 if (localStorage.getItem('theme') === 'dark') {
@@ -13,6 +14,7 @@ toggle.addEventListener('click', () => {
     const isDark = body.classList.contains('dark-mode');
     icon.classList.replace(isDark ? 'fa-moon' : 'fa-sun', isDark ? 'fa-sun' : 'fa-moon');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    document.getElementById("github-icon").setAttribute('src', isDark ? 'github-mark-white.svg' : 'github-mark.svg');
 });
 
 document.querySelectorAll('.menu a').forEach(link => {
@@ -20,3 +22,13 @@ document.querySelectorAll('.menu a').forEach(link => {
                 document.getElementById('menu-toggle').checked = false;
             });
         });
+
+document.addEventListener('click', (event) => {
+    console.log('You clicked:', event.target);
+    if (!menu.contains(event.target) && 
+        !document.getElementById("menu-toggle").contains(event.target) &&
+        !document.getElementById("menu-icon").contains(event.target))
+        {
+            document.getElementById("menu-toggle").checked = false;
+        }
+});

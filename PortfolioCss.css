@@ -107,7 +107,7 @@ h1 {
 .Intro {
     text-align: center;
     font-size: 1.5em;
-    margin-top: 10em
+    margin-top: 8em
 }
 
 .Projects {
@@ -119,7 +119,7 @@ h1 {
 .DownArrow {
     text-align: center;
     font-size: 0.8em;
-    margin-top: 15em;
+    margin-top: 12em;
 }
 
 .UpArrow {
@@ -135,7 +135,8 @@ h1 {
 .container {
   display: flex;
   gap: 1rem;
-  flex-direction: row;
+  margin-top: 1rem;
+  flex-direction: column;
 }
 
 .Project {
@@ -154,22 +155,26 @@ h1 {
     height:3em;
 }
 
-/* @media (min-width: 768px) {
+.ProjectImage {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
   body {
-    font-size: 1.2rem;
+    font-size: 1rem;
     
   }
   .container {
         flex-direction: row;
     }
-} */
+}
 
 /* Laptops and up */
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     body {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .container {
         flex-direction: row;
     }
-} */
+}
