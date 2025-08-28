@@ -3,6 +3,19 @@ const icon = toggle.querySelector('i');
 const body = document.body;
 const menu = document.getElementById("menu");
 
+const scroll_label = document.getElementById('scroll-label');
+const scroll_icon = document.getElementById('scroll-icon');
+
+function toggleScroll() {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+    // At bottom → scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    // Not at bottom → scroll to bottom
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+}
+
 // Load saved theme from localStorage
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
@@ -33,3 +46,22 @@ document.addEventListener('click', (event) => {
             document.getElementById("menu-toggle").checked = false;
         }
 });
+
+(function() {
+            emailjs.init({
+              publicKey: "JxZGUfM1ucG5LHohR",
+            });
+        })();
+
+type="text/javascript"
+window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_wr3nofp', 'template_z0ujbfj', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }

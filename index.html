@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="PortfolioCss.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
 </head>
 <body>
 
@@ -23,16 +31,31 @@
     <i class="fas fa-moon"></i>
 </button>
 
+<div class = "ContactIcons">
+  <a href = "https://github.com/AbdulMalik9405" target="_blank">
+    <img src = "github-mark.svg" class = "githubimage" id = "github-icon">
+  </a>
+  <p></p>
+  <a href = "https://github.com/AbdulMalik9405" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <p></p>
+  <a href="#contact-form">
+    <i class="fa-regular fa-envelope"></i>
+  </a>
+</div>
+
+<div class = "box">
+</div>
+
+<div id="scroll-toggle" class="scroll-toggle" onclick="toggleScroll()">
+  <i class="fa-solid fa-angle-down" id="scroll-icon"></i>
+  <span id="scroll-label"> Scroll Down</span>
+</div>
+
 <div class = "Intro">
   <h1>Abdul Malik</h1>
   <p>This is my Portfolio to show all the projects I have been working on</p>
-</div>
-
-<div class = "DownArrow">
-  <p><h2>Scroll Down</h2></p>
-  <a href="#Projects">
-    <img src = "scrollarrow.webp" class = "ScrollUpDown">
-  </a>
 </div>
 
 <section id = "Projects">
@@ -83,23 +106,38 @@
 
 <div>
   <h2 id="AboutMe">About Me</h2>
+  <p>Text</p>
 </div>  
 
   <div>
-    <h2 id="Contacts">Contact</h2>
-    <a href = "https://github.com/AbdulMalik9405" target="_blank">
-      <img src = "github-mark.svg" class = "githubimage" id = "github-icon">
-    </a>
+    <h2 id="Contacts" class = "Contacts">Contact</h2>
+    <form id="contact-form">
+      <div class="ContactForm">
+        <div class = "Name">
+          <label>Name</label>
+          <br></br>
+          <input type="text" name="name" required class="text">
+        </div>
+        <div class = "Email">
+          <label>Email</label>
+          <br></br>
+          <input type="email" name="email" required class="text">
+        </div>
+      </div>
+        <br></br>
+      <div class = "Subject">
+        <label>Subject</label>
+        <br></br>
+        <input type="text" name="title" required class="text">
+        <br></br>
+        <label>Message</label>
+        <br></br>
+        <textarea name="message" required class="text"></textarea>
+      </div>
+        <br></br>
+        <input type="submit" value="Send">
+    </form>
   </div>  
-
-<div class = "UpArrow">
-  <p><h2>Scroll Up</h2></p>
-  <div class = "Rotate">
-    <a href="#Top">
-      <img src = "scrollarrow.webp" class = "ScrollUpDown">
-    </a>
-  </div>
-</div>
 
   <script src="portfoliojs.js"></script>
 </body>

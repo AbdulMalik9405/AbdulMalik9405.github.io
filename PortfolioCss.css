@@ -25,37 +25,32 @@ body {
   transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5em;
+.Intro {
+  font-size: 2rem;
 }
 
-.Intro {
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 8em
+.box {
+  font-size: 1.5em;
+  height: 8em;
 }
 
 .Projects {
-    text-align: center;
-    font-size: 2em;
-    margin-top: 6.5em;
+  font-size: 2em;
+  margin-top: 6.5em;
 }
 
 .DownArrow {
-    text-align: center;
-    font-size: 0.8em;
-    margin-top: 12em;
+  font-size: 0.8em;
+  margin-top: 12em;
 }
 
 .UpArrow {
-    text-align: center;
-    font-size: 0.8em;
-    margin-top: 15em;
+  font-size: 0.8em;
+  margin-top: 8em;
 }
 
 .Rotate {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .container {
@@ -66,20 +61,14 @@ h1 {
 }
 
 .Project {
-    flex: 1;
-    padding: 1rem;
-    border-radius: 8px;
-    background-color: var(--seconday-bg-color);
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--seconday-bg-color);
 }
 
-.githubimage {
-    width:3em; 
-    height:3em;
-}
-
-.ScrollUpDown {
-    width:3em; 
-    height:3em;
+.Contacts {
+  margin-bottom: 1.5em;
 }
 
 .ProjectImage {
@@ -135,11 +124,12 @@ a.active {
   font-size: 1.5rem;
   cursor: pointer;
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 0rem;
+  left: 0em;
   z-index: 1000;
   color: #333;
   background: none;
+  padding: 1em;
   border: none;
   color: var(--text-color);
 }
@@ -189,8 +179,9 @@ a.active {
   cursor: pointer;
   transition: transform var(--transition-speed);
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: 0rem;
+  right: 0rem;
+  padding: 1em;
   color: var(--text-color);
 }
 
@@ -202,4 +193,79 @@ a.active {
 #theme-toggle {
   display: inline-block;
   vertical-align: middle;
+}
+
+.githubimage {
+  width:1.5em; 
+  height:1.5em;
+}
+
+.fa-brands, .fa-regular {
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+.ContactIcons {
+  position: fixed;
+  top: 50%;
+  left: 0em;
+  transform: translateY(-50%);
+  background: var(--seconday-bg-color);
+  padding: 1em;
+}
+
+.ContactForm {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+textarea {
+  width: 15rem;
+  height: 5rem;
+}
+
+.text {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.Name {
+  flex: 1;
+  text-align: left;
+  padding: 1rem;
+}
+
+.Email {
+  flex: 1;
+  text-align: left;
+  padding: 1rem;
+}
+
+.Subject {
+  
+}
+
+.scroll-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--tertiary-bg-color);
+  color: var(--text-color);
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 1rem;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-toggle:hover {
+  background-color: var(--seconday-bg-color);
 }
