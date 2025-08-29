@@ -2,7 +2,6 @@ const toggle = document.getElementById('theme-toggle');
 const icon = toggle.querySelector('i');
 const body = document.body;
 const menu = document.getElementById("menu");
-
 const scroll_label = document.getElementById('scroll-label');
 const scroll_icon = document.getElementById('scroll-icon');
 
@@ -15,6 +14,17 @@ function toggleScroll() {
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
 }
+
+// Update text based on scroll position
+window.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+    scroll_label.textContent = ' Scroll Up';
+    scroll_icon.className = 'fa-solid fa-angle-up';
+  } else {
+    scroll_label.textContent = ' Scroll Down';
+    scroll_icon.className = 'fa-solid fa-angle-down';
+  }
+});
 
 // Load saved theme from localStorage
 if (localStorage.getItem('theme') === 'dark') {
