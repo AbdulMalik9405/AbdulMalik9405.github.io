@@ -5,6 +5,7 @@
   --hover-color: #333;
   --transition-speed: 0.4s;
   --seconday-bg-color: rgb(228, 228, 228);
+  --quaternary-bg-color: rgb(108, 156, 253);
 }
 
 body.dark-mode {
@@ -13,6 +14,7 @@ body.dark-mode {
   --link-color: rgb(0, 145, 248);
   --hover-color: #f1f1f1;
   --seconday-bg-color: rgb(74, 74, 74);
+  --quaternary-bg-color: rgb(108, 156, 253);
 }
 
 /* Base: styles for mobile by default */
@@ -273,10 +275,36 @@ textarea {
   padding: 1rem;
 }
 
-.Send{
-  background-color: var(--seconday-bg-color);
+.SendButton{
+  background-color: var(--quaternary-bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
   position: relative;
-  left: -20%;
+  left: 26%;
+  width: 5%;
+  border-radius: 8px;
+  border-color: var(--hover-color);
+  border-width: 0.1rem;
+  border-style: solid;
+  padding: 0px;
+  line-height: 1.5;
+}
+
+.Send{
+  background-color: var(--quaternary-bg-color);
+  color: var(--text-color);
+  font-size: 80%;
+  position: relative;
+  width: 70%;
+  height: 2rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0px;
+}
+
+.fa-solid {
+  line-height: 1.5 !important;
 }
 
 .scroll-toggle {
