@@ -85,6 +85,13 @@ body {
   .container {
         flex-direction: row;
     }
+  .ContactForm {
+    flex-direction: row !important;
+    width: 50% !important;
+  }
+  .SubjectMessage {
+    width: 50% !important;
+  }
 }
 
 /* Laptops and up */
@@ -95,6 +102,13 @@ body {
     .container {
         flex-direction: row;
     }
+    .ContactForm {
+    flex-direction: row !important;
+    width: 50% !important;
+  }
+  .SubjectMessage {
+    width: 50% !important;
+  }
 }
 
 a {
@@ -219,8 +233,8 @@ a.active {
 .ContactForm {
   display: flex;
   gap: 1rem;
-  flex-direction: row;
-  width: 50%;
+  flex-direction: column;
+  width: 80%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -257,7 +271,7 @@ textarea {
   display: flex;
   gap: 0.1rem;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -281,13 +295,13 @@ textarea {
   display: flex;
   flex-direction: row;
   position: relative;
-  left: 26%;
-  width: 5%;
+  left: 1rem;
+  width: 5rem;
   border-radius: 8px;
   border-color: var(--hover-color);
   border-width: 0.1rem;
   border-style: solid;
-  padding: 0px;
+  padding-right: 0.5rem;
   line-height: 1.5;
 }
 
@@ -296,11 +310,21 @@ textarea {
   color: var(--text-color);
   font-size: 80%;
   position: relative;
-  width: 70%;
+  width: 7rem;
   height: 2rem;
   border: none;
   border-radius: 8px;
   padding: 0px;
+}
+
+.SendButton:hover{
+  .Send{
+    background-color: rgb(71, 131, 249);
+    cursor: pointer;
+  }
+  transform: scale(1.1);
+  background-color: rgb(71, 131, 249);
+  cursor: pointer;
 }
 
 .fa-solid {
